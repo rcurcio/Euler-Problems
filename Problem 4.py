@@ -1,23 +1,21 @@
 DEBUG = True
 
+
 def multiply3digitNumbers():
 	# Multiplying all three digit numbers to get a palindrome.
 
 	secondPali = list()
 
-	p = 999
+	for i in xrange(999, 99, -1):
 
-	while p > 99:
 
-		n = 999
+		for j in xrange(999, 99, -1):
 
-		while n > 99:
 
-			pali = p * n
+			pali = i * j
 			if DEBUG:
-          			print(pali)
-
-			n -= 1
+				print(pali)
+				print('^^^^^ pali')
 	
 			pali = list(str(pali))
         	
@@ -30,14 +28,10 @@ def multiply3digitNumbers():
 			secondPali = ''.join(secondPali)
 
 			if pali == secondPali:
-				print(pali)
-				print('pali')
+				return pali
+
 			else:
 				break
-
-
-			
-
 
 multiply3digitNumbers()
 		
