@@ -1,4 +1,4 @@
-DEBUG = True
+DEBUG = False
 
 
 def multiply3digitNumbers():
@@ -7,9 +7,14 @@ def multiply3digitNumbers():
 	secondPali = list()
 
 	for i in xrange(999, 99, -1):
-
+		if DEBUG:
+			print(i)
+			print('i')
 
 		for j in xrange(999, 99, -1):
+			if DEBUG:
+				print(j)
+
 
 
 			pali = i * j
@@ -28,10 +33,7 @@ def multiply3digitNumbers():
 			if pali == secondPali:
 				return pali
 
-			else:
-				break
-
-multiply3digitNumbers()
+print(multiply3digitNumbers())
 		
 
 
