@@ -13,9 +13,7 @@ def multiply3digitNumbers():
 
 
 			pali = i * j
-			if DEBUG:
-				print(pali)
-				print('^^^^^ pali')
+
 	
 			pali = list(str(pali))
         	
