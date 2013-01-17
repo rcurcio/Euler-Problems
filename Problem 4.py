@@ -1,4 +1,4 @@
-DEBUG = False
+DEBUG = True
 
 
 def multiply3digitNumbers():
@@ -16,10 +16,8 @@ def multiply3digitNumbers():
 				print(j)
 
 
-
 			pali = i * j
 
-	
 			pali = list(str(pali))
         	
 			secondPali = pali
